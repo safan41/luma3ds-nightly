@@ -1,0 +1,39 @@
+<html>
+
+<head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+        var hash = 
+        var file = "Luma3ds-" + hash + ".zip"
+            $('#submit').click(  function () {
+                console.log("click");
+                var sendData = $('#data').val();
+                var hash = 
+                var file = "Luma3ds-" + hash + ".zip"
+
+                $.ajax({
+                    url: 'https://transfer.sh/' + ,    //Your api url
+                    type: 'PUT',   //type is any HTTP method
+                    data: {
+                        data: sendData
+                    },      //Data as js object
+                    success: function () {
+                    $(#
+                    }
+                })
+                ;
+
+            });
+        });
+    </script>
+</head>
+<body>
+<form>
+    <input id="submit" type="button"  value="Create Link">
+</form>
+<h1 id="e"></h1>
+</body>
+</html>
